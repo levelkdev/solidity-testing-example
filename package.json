@@ -1,0 +1,22 @@
+{
+  "name": "solidity-testing-example",
+  "version": "0.0.1",
+  "description": "A solidity contract with unit tests",
+  "scripts": {
+    "test": "concurrently --kill-others -s first \"testrpc &> /dev/null\" \"truffle test\"",
+    "deploy": "truffle compile && truffle migrate --reset",
+    "compile-mock": "solc --bin ./contracts/ThresholdPoolMock.sol",
+    "compile": "solc --bin ./contracts/ThresholdPool.sol"
+  },
+  "author": "Rocky Balboa",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-register": "^6.24.1",
+    "bignumber.js": "^4.0.2",
+    "concurrently": "^3.5.0",
+    "eslint": "^3.14.0",
+    "ethereumjs-testrpc": "^3.9.2",
+    "lodash": "^4.17.4",
+    "truffle": "beta"
+  }
+}
