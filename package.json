@@ -8,7 +8,7 @@
     "compile-mock": "solc --bin ./contracts/ThresholdPoolMock.sol",
     "compile": "solc --bin ./contracts/ThresholdPool.sol"
   },
-  "author": "Rocky Balboa",
+  "author": "Mike Calvanese",
   "license": "MIT",
   "devDependencies": {
     "babel-register": "^6.24.1",
